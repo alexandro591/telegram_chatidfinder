@@ -7,7 +7,7 @@ bot.start(ctx => {
   return startAction(ctx)
 })
 
-bot.on('text', ctx => ctx.reply('Default reply'));
+bot.on('text', ctx => ctx.reply(JSON.stringify(ctx)));
 
 exports.handler = async event => {
   try {
