@@ -7,7 +7,7 @@ bot.start(ctx => {
   return startAction(ctx)
 })
 
-bot.on('text', ctx => ctx.reply(JSON.stringify(ctx)));
+bot.on('text', ctx => startAction(ctx));
 
 exports.handler = async event => {
   try {
